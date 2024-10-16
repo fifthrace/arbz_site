@@ -115,12 +115,12 @@
         try {
             const assetResponse = await fetch('https://free-api.vestige.fi/asset/1285492943');
             const assetData = await assetResponse.json();
-            const circulatingSupply = (assetData.circulating_supply / 1_000_000).toFixed(2); // Convert to millions
+            const circulatingSupply = (assetData.circulating_supply / 1_000_000_000_000).toFixed(2); // Convert to millions
             document.getElementById('circulating-supply').innerText = `${circulatingSupply}M ARBZ`; // Update the text
             
             const lockedResponse = await fetch('https://free-api.vestige.fi/asset/1285492943/locked');
             const lockedData = await lockedResponse.json();
-            const lockedSupply = (lockedData.locked_supply / 1_000_000).toFixed(2); // Convert to millions
+            const lockedSupply = (lockedData.supply_locked / 1_000_000_000_000).toFixed(2); // Convert to millions
             document.getElementById('locked-supply').innerText = `${lockedSupply}M ARBZ`; // Update the text
             
         } catch (error) {
