@@ -110,6 +110,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="card text-center mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Value Locked</h5>
+                            <p class="card-text" id="tvl">Loading...</p> 
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -138,6 +146,12 @@
             const lockedData = await lockedResponse.json();
             const lockedSupply = (lockedData.supply_locked / 1_000_000).toFixed(2); // Convert to millions
             document.getElementById('locked-supply').innerText = `${lockedSupply}M ARBZ`; // Update the text
+
+            const tvlResponse = await fetch('https://free-api.vestige.fi/asset/1285492943/list');
+            const tvlData = await tvlResponse.json();
+            const tvl = (tvlData.tvl / 1_000).toFixed(2); // Convert to millions
+            document.getElementById('tvl-supply').innerText = `$${tvl}K`; // Update the text
+
             
         } catch (error) {
             console.error('Error fetching data:', error);
