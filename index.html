@@ -24,6 +24,29 @@
             vertical-align: middle; /* Align with text */
         }
 
+        .content {
+            display: flex; /* Use flexbox to align items */
+            align-items: center; /* Center items vertically */
+        }
+        
+        .graphic {
+            margin-right: 20px; /* Space between image and text */
+            max-width: 100%; /* Ensure images are responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+        
+        /* Mobile styles */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column; /* Stack items on mobile */
+                align-items: flex-start; /* Align items to the start */
+            }
+        
+            .graphic {
+                margin: 0; /* Remove margin on mobile */
+            }
+        }
+
         
     </style>
 
@@ -76,7 +99,7 @@
     <!-- Statistics Section -->
     <section class="statistics py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Key Statistics</h2>
+            <h2 class="text-center mb-4">Statistics</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card text-center mb-4">
@@ -129,17 +152,36 @@
             </div>
         </div>
     </section>
-    <!-- Token Information Section -->
-    <section class="token-info py-5">
+    <section class="thestart py-5">
         <div class="container">
-            <h2 class="text-center mb-4">How it Started</h2>
-            <p class="lead text-center">The ARBZ token was minted on the Algorand blockchain on December 23, 2023. Initially, the token's liquidity was bootstrapped with $1500 and was focused on Algorand with additional liquidity bridged and created on Ethereum, Polygon, Base, Arbitrum and Avalanche. It was evident early on that this approach had spread the liquidity too thin and consolidation would be needed in order to establish critical mass. A few stops and starts later, all liquidity was moved to Algorand with the goal of increasing TVL to the point that moving cross chain in the future would be feasilble. 10% of the supply was reserved for the creator and held in a <a href="https://vestige.fi/vault/1367337957">Vestige Vault</a> with quarterly unlocks over 5 years. The rest has been held in the creator account with most being used for LP creation and some used for LP partnerships and farming rewards (see above).</p>
-            <h2 class="text-center mb-4">How it's Going</h2>
-            <p class="lead text-center">After much testing and community feedback, the reserve's LP was refocused on highly trusted assets in the Algorand ecosystem. These include ALGO, gALGO, USDC, wBTC, Meld GOLD. LP partnerships have been established with several other tokens in the Algorand ecosystem, including <a href="https://vestige.fi/asset/400593267">FINITE</a>, <a href="https://vestige.fi/asset/2154668640">MOOJ</a>, <a href="https://vestige.fi/asset/523683256">AKTA</a> and <a href="https://vestige.fi/asset/2342621554">IPT</a> to name a few. The reserve wallet can be found under the NFD <a href="https://www.asastats.com/FAR6R7FZTW6NZXH2SVHIPBNMPIFPAJ4BY6322PEQPTARJCODVR6BVU4A4U">arbitraz.algo</a>. Additionally, users are encouraged to pair their ARBZ with other tokens in the ecossytem to provide more arbitrage opportunities for bots and dex aggregators.
-            <h2 class="text-center mb-4">What's Next</h2>
-            <p class="lead text-center">TVL on Algorand will continue to be monitored closely. When TVL is sufficient, the reserve will begin seeding other chains with ARBZ pairs. Tentatively, the TVL number sought after is $50K, but community feedback will continue to be paramount in making these types of decisions. Priority will be given to chains that have arbitrage bots setup between them and Algorand.</p>
+            <h2 class="text-center mb-4">The Start</h2>
+            <div class="content">
+                <img src="images/arbz-logo.svg" alt="Graphic 1" class="graphic">
+                <p class="lead text-center">The ARBZ token was minted on the Algorand blockchain on December 23, 2023. Initially, the token's liquidity was bootstrapped with $1500 and was focused on Algorand with additional liquidity bridged and created on Ethereum, Polygon, Base, Arbitrum and Avalanche. It was evident early on that this approach had spread the liquidity too thin and consolidation would be needed in order to establish critical mass. A few stops and starts later, all liquidity was moved to Algorand with the goal of increasing TVL to the point that moving cross chain in the future would be feasible. 10% of the supply was reserved for the creator and held in a <a href="https://vestige.fi/vault/1367337957">Vestige Vault</a> with quarterly unlocks over 5 years. The rest has been held in the creator account with most being used for LP creation and some used for LP partnerships and farming rewards (see above).</p>
+            </div>
         </div>
     </section>
+    
+    <section class="today py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Today</h2>
+            <div class="content">
+                <img src="images/arbz-logo.svg" alt="Graphic 2" class="graphic">
+                <p class="lead text-center">After much testing and community feedback, the reserve's LP was refocused on highly trusted assets in the Algorand ecosystem. These include ALGO, gALGO, USDC, wBTC, Meld GOLD. LP partnerships have been established with several other tokens in the Algorand ecosystem, including <a href="https://vestige.fi/asset/400593267">FINITE</a>, <a href="https://vestige.fi/asset/2154668640">MOOJ</a>, <a href="https://vestige.fi/asset/523683256">AKTA</a> and <a href="https://vestige.fi/asset/2342621554">IPT</a> to name a few. The reserve wallet can be found under the NFD <a href="https://www.asastats.com/FAR6R7FZTW6NZXH2SVHIPBNMPIFPAJ4BY6322PEQPTARJCODVR6BVU4A4U">arbitraz.algo</a>. Additionally, users are encouraged to pair their ARBZ with other tokens in the ecosystem to provide more arbitrage opportunities for bots and dex aggregators.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="future py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Future</h2>
+            <div class="content">
+                <img src="images/arbz-logo.svg" alt="Graphic 3" class="graphic">
+                <p class="lead text-center">TVL on Algorand will continue to be monitored closely. When TVL is sufficient, the reserve will begin seeding other chains with ARBZ pairs. Tentatively, the TVL number sought after is $50K, but community feedback will continue to be paramount in making these types of decisions. Priority will be given to chains that have arbitrage bots set up between them and Algorand.</p>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Grab some info from vestige api -->
     <script>
