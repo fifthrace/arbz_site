@@ -149,8 +149,8 @@
 
             const tvlResponse = await fetch('https://free-api.vestige.fi/asset/1285492943/list');
             const tvlData = await tvlResponse.json();
-            const tvl = (tvlData.tvl).toFixed(2); // Convert to thousands
-            document.getElementById('tvl').innerText = `$${tvl}`; // Update the text
+            const tvl = (tvlData.tvl/ 10_000).toFixed(2); // Convert to thousands
+            document.getElementById('tvl').innerText = `$${tvl}k`; // Update the text
 
             
         } catch (error) {
