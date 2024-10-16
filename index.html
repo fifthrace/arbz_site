@@ -114,7 +114,7 @@
         try {
             const response = await fetch('https://free-api.vestige.fi/asset/1285492943');
             const data = await response.json();
-            const circulatingSupply = (data.circulating_supply / 1_000_000).toFixed(2); // Convert to millions
+            const circulatingSupply = (data.circulating_supply / 1_000_000_000_000).toFixed(2); // Convert to millions
             document.getElementById('circulating-supply').innerText = `${circulatingSupply}M ARBZ`; // Update the text
         } catch (error) {
             console.error('Error fetching data:', error);
