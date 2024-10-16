@@ -25,19 +25,20 @@
         }
 
         .content {
-            display: flex; /* Use flexbox to align items */
+            display: flex; /* Use flexbox for layout */
             align-items: center; /* Center items vertically */
         }
         
         .graphic {
-            max-width: 300px; /* Set a max width */
+            max-width: 50%; /* Set a max width of 50% */
             width: 100%; /* Responsive */
             height: auto; /* Maintain aspect ratio */
             margin-right: 20px; /* Space between image and text */
         }
-
-        .lead {
-            text-align: right; /* Left-align the text */
+        
+        .text {
+            max-width: 50%; /* Set a max width of 50% for text */
+            text-align: left; /* Left-align the text */
         }
         
         /* Mobile styles */
@@ -47,11 +48,12 @@
                 align-items: flex-start; /* Align items to the start */
             }
         
-            .graphic {
-                margin: 0; /* Remove margin on mobile */
+            .graphic, .text {
                 max-width: 100%; /* Allow full width on mobile */
+                margin-right: 0; /* Remove margin on mobile */
             }
         }
+
 
 
         
@@ -159,6 +161,7 @@
             </div>
         </div>
     </section>
+    
     <section class="thestart py-5">
         <div class="container">
             <h2 class="text-center mb-4">The Start</h2>
