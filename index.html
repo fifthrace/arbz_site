@@ -9,6 +9,13 @@
     <link rel="icon" href="images/favicon.png" type="image/png">
 
     <style>
+        .hero {
+            background: linear-gradient(135deg, #3c0272, #7d37aa); /* From deep purple to lighter */
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
         .vestige-logo {
             height: 18px; /* Adjust this value as needed */
             vertical-align: middle; /* Align with text */
@@ -53,11 +60,11 @@
     </nav>
     
     <!-- Hero Section -->
-    <section class="hero bg-dark text-light text-center py-5">
+    <section class="hero">
         <div class="container">
             <h1 class="display-4">Arbitraz</h1>
             <p class="lead">A community directed cross chain arbitrage experiment born on Algorand.</p>
-            <div class="sub-section mt-4">
+            <div class="sub-lead">
                 <p class="text-center">
                     Arbitraz is an Algorand standard asset (ASA: 1285492943) created to increase TVL on Algorand by establishing several trading pairs across leading dexes. Bots and dex aggregators utilize these pairs to trade more efficiently, which generates fees for liquidity holders.
                 </p>
