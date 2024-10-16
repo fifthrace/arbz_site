@@ -8,105 +8,121 @@
     <title>Arbitraz</title>
 </head>
 <body>
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">Arbitraz</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#hero">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#statistics">Statistics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#liquidity">Liquidity Info</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#cta">Get Started</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-    <!-- Hero Section -->
-<section class="hero bg-dark text-light text-center py-5">
-    <div class="container">
-        <h1 class="display-4">Arbitraz</h1>
-        <p class="lead">A community directed cross chain arbitrage experiment born on Algorand</p>
-        <a href="#cta" class="btn btn-primary btn-lg mt-3">Get Started</a>
-    </div>
-</section>
-
-<!-- Statistics Section -->
-<section class="statistics py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Key Statistics</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card text-center mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Circulating Supply</h5>
-                        <p class="card-text">890M ARBZ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-center mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Total Supply</h5>
-                        <p class="card-text">1B ARBZ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-center mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Locked Supply</h5>
-                        <p class="card-text">220M ARBZ</p>
-                    </div>
-                </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Arbitraz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#statistics">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#liquidity">Liquidity Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cta">Get Started</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-</section>
-<!-- Liquidity Info Section -->
-<section class="liquidity py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Current Liquidity</h2>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">Asset</th>
-                    <th scope="col">Liquidity</th>
-                    <th scope="col">Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ARBZ</td>
-                    <td>$500,000</td>
-                    <td>$5.00</td>
-                </tr>
-                <tr>
-                    <td>ETH</td>
-                    <td>$1,000,000</td>
-                    <td>$2,000</td>
-                </tr>
-                <tr>
-                    <td>BTC</td>
-                    <td>$2,000,000</td>
-                    <td>$40,000</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
+    </nav>
+    
+        <!-- Hero Section -->
+    <section class="hero bg-dark text-light text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Arbitraz</h1>
+            <p class="lead">A community directed cross chain arbitrage experiment born on Algorand</p>
+            <a href="#cta" class="btn btn-primary btn-lg mt-3">Get Started</a>
+        </div>
+    </section>
+    
+    <!-- Statistics Section -->
+    <section class="statistics py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Key Statistics</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Circulating Supply</h5>
+                            <p class="card-text"id="circulating-supply">Loading...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Supply</h5>
+                            <p class="card-text">1B ARBZ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Locked Supply</h5>
+                            <p class="card-text">220M ARBZ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Liquidity Info Section -->
+    <section class="liquidity py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Current Liquidity</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Asset</th>
+                        <th scope="col">Liquidity</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ARBZ</td>
+                        <td>$500,000</td>
+                        <td>$5.00</td>
+                    </tr>
+                    <tr>
+                        <td>ETH</td>
+                        <td>$1,000,000</td>
+                        <td>$2,000</td>
+                    </tr>
+                    <tr>
+                        <td>BTC</td>
+                        <td>$2,000,000</td>
+                        <td>$40,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Grab some info from vestige api -->
+    <script>
+    async function fetchData() {
+        try {
+            const response = await fetch('https://free-api.vestige.fi/asset/1285492943');
+            const data = await response.json();
+            const circulatingSupply = (data.circulating_supply / 1_000_000).toFixed(2); // Convert to millions
+            document.getElementById('circulating-supply').innerText = `${circulatingSupply}M ARBZ`; // Update the text
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    }
+
+    window.onload = fetchData; // Call the function on page load
+</script>
 
     
 </body>
